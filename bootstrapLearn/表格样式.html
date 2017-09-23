@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格样式</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <!--.
+        table样式主要作用有3个：增加单元格内边距，在thead的底部设置一条2像素的粗线，
+        以及在每行记录的顶部都有一条一个像素的细线
+        table-striped是背景条纹表格，通过更改相关行的td，th背景色来实现
+        table-bordered是带边框的表格
+        table-hover是鼠标悬停高亮表格
+        table-condensed是紧凑型表格，主要是通过减小单元格的内边距
+        table-responsive是响应式表格，其会在小屏幕上水平滚动，当屏幕大于768时，水平滚动条消失，主要是利用@media特性
+    -->
+    <table class="table table-striped table-bordered table-hover table-responsive">
+        <thead>
+            <tr class="active">
+                <th>#</th>
+                <th>图书名称</th>
+                <th>出版社</th>
+                <th>作译者</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="success">
+                <td>1</td>
+                <td>JavaScript编程精解</td>
+                <td>机械工业出版社</td>
+                <td>汤姆大叔(译)</td>
+            </tr>
+            <tr class="info">
+                <td>2</td>
+                <td>JavaScript设计模式</td>
+                <td>机械工业出版社</td>
+                <td>汤姆大叔(译)</td>
+            </tr>
+            <tr class="danger">
+                <td>3</td>
+                <td>JavaScript启示录</td>
+                <td>机械工业出版社</td>
+                <td>汤姆大叔(译)</td>
+            </tr>
+            <tr class="warning">
+                <td>4</td>
+                <td>深入理解Bootstrap</td>
+                <td>机械工业出版社</td>
+                <td>汤姆大叔(译)</td>
+            </tr>
+        </tbody>
+    </table>
+<script src="../lib/jquery/jquery-3.2.1.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

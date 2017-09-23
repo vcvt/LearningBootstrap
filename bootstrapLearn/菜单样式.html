@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--移动先行-->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菜单样式</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <!--
+        javascript默认先检测data-target属性，如果没有，再检测href属性，如果还没有，则默认为父元素
+    -->
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="active">
+            <a href="#home" data-toggle="tab">首页</a>
+        </li>
+        <li class="">
+            <a href="#profile" data-toggle="tab">个人资料</a>
+        </li>
+        <li class="dropdown">
+            <!--单击‘我的书籍’时，弹出下拉菜单-->
+            <a href="#" data-toggle="dropdown" class="data-toggle">
+                我的书籍<b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#dropdown1" data-toggle="tab">JavaScript编程精解</a></li>
+                <li><a href="#dropdown2" data-toggle="tab">JavaScript设计模式</a></li>
+                <li><a href="#dropdown3" data-toggle="tab">JavaScript启示录</a></li>
+                <li><a href="#dropdown4" data-toggle="tab">JavaScript深入理解</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div id="home" class="tab-pane fade active in">
+            <p>单击首页时显示该区域</p>
+        </div>
+        <div id="profile" class="tab-pane fade">
+            <p>单击个人资料时显示该区域</p>
+        </div>
+        <div id="dropdown1" class="tab-pane fade">
+            <p>单击JavaScript编程精解时显示该区域</p>
+        </div>
+        <div id="dropdown2" class="tab-pane fade">
+            <p>单击JavaScript设计模式时显示该区域</p>
+        </div>
+        <div id="dropdown3" class="tab-pane fade">
+            <p>单击JavaScript启示录时显示该区域</p>
+        </div>
+        <div id="dropdown4" class="tab-pane fade">
+            <p>单击JavaScript深入理解时显示该区域</p>
+        </div>
+    </div>
+    <!--缩略语实现的两种方式，initialism是改变字体大小-->
+    <abbr title="JavaScript设计模式是一本专门讲解设计模式的专业书籍">JavaScript设计模式</abbr>
+    <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+
+    <!--地址元素，每一行用<br>结尾-->
+    <address>
+        <strong>Twitter, Inc.</strong><br>
+        795 Folsom Ave, Suite 600<br>
+        San Francisco, CA 94107<br>
+        {123} 456-7890
+    </address>
+    <address>
+        <strong>汤姆大叔</strong><br>
+        <a href="mailto:#">smmith@foxmai.com</a>
+    </address>
+    <!--引用-->
+    <blockquote class="pull-right">
+        <p>不愤不启，不悱不发。举一隅，不以三隅反，则吾不复也。</p>
+        <small>出自<cite title="论语·述而">《论语》</cite> </small>
+    </blockquote>
+    <!--水平定义列表-->
+    <dl class="dl-horizontal">
+        <dt>Description Lists</dt>
+        <dd>A description list is perfect for defining terms</dd>
+        <dt>Description Lists</dt>
+        <dd>A description list is perfect for defining terms</dd>
+        <dt>Description Lists</dt>
+        <dd>A description list is perfect for defining terms</dd>
+        <dt>Description Lists</dt>
+        <dd>A description list is perfect for defining terms</dd>
+    </dl>
+
+    <!--代码显示问题-->
+    <!--
+        使用<code>显示单行内联代码
+        使用<kbd>元素显示用户输入代码
+        使用<pre>元素新生多行代码块
+    -->
+    要对<code>&lt;body&gt;&lt;/body&gt;</code>进行设置
+    <pre>&lt;body&gt;&lt;/body&gt;</pre>
+<script src="../lib/jquery/jquery-3.2.1.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
